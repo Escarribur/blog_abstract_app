@@ -11,6 +11,11 @@
 </p>
 
 
+<h2>Comments</h2>
+<% @comments.each do |comment| %>
+  <li> <%= comment.commentary =%> </li>
+<% end %>
+
 <p>
   <strong>Add a comment</strong>
   <%= render 'comment_form', comment: @comment %>
